@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>المجتمع التعليمي - منصة التعلم الذكي</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: "Cairo", sans-serif;
+      }
+      .community-card {
+        transition: all 0.3s ease;
+      }
+      .community-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+      .active-tab {
+        background-color: #3f6212;
+        color: white;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <header
+      class="bg-gradient-to-r from-green-700 to-green-600 text-white py-16 text-center shadow-lg"
+    >
+      <div class="max-w-4xl mx-auto px-4">
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-4">
+          المجتمع التعليمي التفاعلي
+        </h1>
+        <p class="text-xl opacity-90 mb-6">
+          انضم إلى مجتمعنا النشط وشارك المعرفة مع آلاف الأعضاء
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <button
+            onclick="window.location.href='join.html';"
+            class="bg-white text-green-700 px-6 py-3 rounded-full font-semibold hover:bg-green-50 transition"
+          >
+            انضم الآن <i class="fas fa-user-plus mr-2"></i>
+          </button>
+          <button
+            onclick="window.location.href='about.html';"
+            class="border-2 border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-green-700 transition"
+          >
+            تعرف أكثر <i class="fas fa-info-circle mr-2"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-12">
+      <div class="flex overflow-x-auto mb-8 scrollbar-hide">
+        <div class="flex space-x-2">
+          <button
+            class="tab-btn px-6 py-3 rounded-full font-semibold bg-green-100 text-green-800 active-tab"
+          >
+            <i class="fas fa-users mr-2"></i> مجتمعنا
+          </button>
+          <button
+            class="tab-btn px-6 py-3 rounded-full font-semibold bg-gray-100 text-gray-800"
+          >
+            <i class="fas fa-trophy mr-2"></i> المسابقات
+          </button>
+          <button
+            class="tab-btn px-6 py-3 rounded-full font-semibold bg-gray-100 text-gray-800"
+          >
+            <i class="fas fa-calendar-alt mr-2"></i> الأحداث
+          </button>
+          <button
+            class="tab-btn px-6 py-3 rounded-full font-semibold bg-gray-100 text-gray-800"
+          >
+            <i class="fas fa-chalkboard-teacher mr-2"></i> ورش العمل
+          </button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
+        <div
+          class="bg-white rounded-xl shadow-sm p-6 text-center community-card"
+        >
+          <div class="text-green-600 text-3xl mb-2">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-gray-800">12,845</h3>
+          <p class="text-gray-600">عضو في المجتمع</p>
+        </div>
+        <div
+          class="bg-white rounded-xl shadow-sm p-6 text-center community-card"
+        >
+          <div class="text-green-600 text-3xl mb-2">
+            <i class="fas fa-comments"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-gray-800">3,245</h3>
+          <p class="text-gray-600">مناقشة نشطة</p>
+        </div>
+        <div
+          class="bg-white rounded-xl shadow-sm p-6 text-center community-card"
+        >
+          <div class="text-green-600 text-3xl mb-2">
+            <i class="fas fa-lightbulb"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-gray-800">1,876</h3>
+          <p class="text-gray-600">حلول مقدمة</p>
+        </div>
+        <div
+          class="bg-white rounded-xl shadow-sm p-6 text-center community-card"
+        >
+          <div class="text-green-600 text-3xl mb-2">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-gray-800">428</h3>
+          <p class="text-gray-600">خبير معتمد</p>
+        </div>
+      </div>
+
+      <section class="bg-white rounded-xl shadow-md p-8 mb-12">
+        <h2
+          class="text-3xl font-bold text-green-700 mb-8 border-b-2 border-green-200 pb-3"
+        >
+          <i class="fas fa-star mr-3"></i> مميزات مجتمعنا
+        </h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="flex items-start">
+            <div class="bg-green-100 p-3 rounded-full text-green-700 mr-4 mt-1">
+              <i class="fas fa-comment-dots text-xl"></i>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold text-gray-800 mb-2">
+                منتديات نقاش متخصصة
+              </h3>
+              <p class="text-gray-600 leading-relaxed">
+                انضم إلى منتدياتنا التخصصية التي تغطي جميع المجالات التعليمية،
+                حيث يمكنك طرح الأسئلة والمشاركة في النقاشات مع الخبراء والزملاء.
+              </p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <div class="bg-green-100 p-3 rounded-full text-green-700 mr-4 mt-1">
+              <i class="fas fa-users text-xl"></i>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold text-gray-800 mb-2">
+                مجموعات دراسة تفاعلية
+              </h3>
+              <p class="text-gray-600 leading-relaxed">
+                شكل أو انضم إلى مجموعات الدراسة مع زملاء يشاركونك نفس
+                الاهتمامات، وتعاونوا في حل المشكلات وإنجاز المهام.
+              </p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <div class="bg-green-100 p-3 rounded-full text-green-700 mr-4 mt-1">
+              <i class="fas fa-trophy text-xl"></i>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold text-gray-800 mb-2">
+                مسابقات وجوائز شهرية
+              </h3>
+              <p class="text-gray-600 leading-relaxed">
+                شارك في مسابقاتنا الشهرية لاختبار مهاراتك والفوز بجوائز قيمة
+                وشهادات تقديرية تثري سيرتك الذاتية.
+              </p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <div class="bg-green-100 p-3 rounded-full text-green-700 mr-4 mt-1">
+              <i class="fas fa-medal text-xl"></i>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold text-gray-800 mb-2">
+                نظام المكافآت
+              </h3>
+              <p class="text-gray-600 leading-relaxed">
+                احصل على نقاط وشارات تقديرية مقابل مشاركاتك النوعية، وتدرج في
+                لوحة الشرف لأعضاء المجتمع المتميزين.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-3xl font-bold text-green-700 mb-8 text-center">
+          <i class="fas fa-quote-left mr-3"></i> آراء أعضاء المجتمع
+        </h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="bg-white rounded-xl shadow-md p-6 community-card">
+            <div class="flex items-center mb-4">
+              <img
+                src="https://randomuser.me/api/portraits/women/32.jpg"
+                alt="سارة محمد"
+                class="w-12 h-12 rounded-full mr-4"
+              />
+              <div>
+                <h4 class="font-semibold">سارة محمد</h4>
+                <p class="text-gray-500 text-sm">طالبة هندسة</p>
+              </div>
+            </div>
+            <p class="text-gray-600 italic">
+              "المجتمع ساعدني في فهم مواد كانت صعبة عليّ من خلال المناقشات وحلول
+              الزملاء. أشعر أنني لست وحدي في رحلتي التعليمية."
+            </p>
+            <div class="mt-3 text-yellow-400">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="bg-white rounded-xl shadow-md p-6 community-card">
+            <div class="flex items-center mb-4">
+              <img
+                src="https://randomuser.me/api/portraits/men/45.jpg"
+                alt="أحمد خالد"
+                class="w-12 h-12 rounded-full mr-4"
+              />
+              <div>
+                <h4 class="font-semibold">أحمد خالد</h4>
+                <p class="text-gray-500 text-sm">مدرس رياضيات</p>
+              </div>
+            </div>
+            <p class="text-gray-600 italic">
+              "كمدرس، أجد في هذا المجتمع فرصة رائعة لمشاركة خبراتي وتعلم أساليب
+              جديدة من الزملاء. التفاعل هنا ملهم حقاً."
+            </p>
+            <div class="mt-3 text-yellow-400">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+          <div class="bg-white rounded-xl shadow-md p-6 community-card">
+            <div class="flex items-center mb-4">
+              <img
+                src="https://randomuser.me/api/portraits/women/68.jpg"
+                alt="نورا عبدالله"
+                class="w-12 h-12 rounded-full mr-4"
+              />
+              <div>
+                <h4 class="font-semibold">نورا عبدالله</h4>
+                <p class="text-gray-500 text-sm">طالبة طب</p>
+              </div>
+            </div>
+            <p class="text-gray-600 italic">
+              "مجموعة الدراسة التي شكلناها هنا كانت الداعم الرئيسي لي في السنة
+              الصعبة. بدون هذا المجتمع لما استطعت النجاح بهذه الدرجات."
+            </p>
+            <div class="mt-3 text-yellow-400">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section class="bg-green-700 text-white py-12">
+      <div class="max-w-4xl mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-4">
+          هل أنت مستعد للانضمام إلى مجتمعنا؟
+        </h2>
+        <p class="text-xl opacity-90 mb-6">
+          سجل الآن وابدأ رحلتك في أكبر مجتمع تعليمي تفاعلي
+        </p>
+        <button
+          class="bg-white text-green-700 px-8 py-4 rounded-full font-bold hover:bg-green-50 transition shadow-lg"
+        >
+          انضم إلينا مجاناً <i class="fas fa-arrow-left ml-2"></i>
+        </button>
+      </div>
+    </section>
+
+    <footer class="bg-gray-100 text-gray-600 py-8 border-t border-gray-200">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="mb-4 md:mb-0">
+            <h3 class="text-xl font-bold text-green-700 mb-2">
+              المجتمع التعليمي
+            </h3>
+            <p class="max-w-md">
+              منصة التعلم الذكي تقدم مجتمعاً تفاعلياً لدعم العملية التعليمية
+              وتبادل الخبرات.
+            </p>
+          </div>
+          <div class="flex space-x-6">
+            <a href="#" class="text-gray-500 hover:text-green-600 text-xl">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#" class="text-gray-500 hover:text-green-600 text-xl">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="text-gray-500 hover:text-green-600 text-xl">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="text-gray-500 hover:text-green-600 text-xl">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="#" class="text-gray-500 hover:text-green-600 text-xl">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-200 mt-6 pt-6 text-center md:text-left"
+        >
+          <p>© 2025 منصة التعلم الذكي. جميع الحقوق محفوظة.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.querySelectorAll(".tab-btn").forEach((btn) => {
+        btn.addEventListener("click", function () {
+          document
+            .querySelectorAll(".tab-btn")
+            .forEach((b) => b.classList.remove("active-tab"));
+          document
+            .querySelectorAll(".tab-btn")
+            .forEach((b) => b.classList.add("bg-gray-100", "text-gray-800"));
+          this.classList.add("active-tab");
+          this.classList.remove("bg-gray-100", "text-gray-800");
+        });
+      });
+    </script>
+  </body>
+</html>
